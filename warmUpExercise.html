@@ -3,24 +3,23 @@
 
 Note: Integers are whole numbers (1,2,23,44, ect). Integers do not have decimal points. -->
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function isInterger(num) {
-            if (num.isInterger){
-                return true;
-            } else {
-                return false;
-            };
-        }
+      function isInteger(num) {
+        return Number.isInteger(num);
+      }
+      console.log(isInteger(2)); // returns true
+      console.log(isInteger(2.3)); // returns false
+      console.log(isInteger(true)); // returns false
+      console.log(isInteger("2")); // returns false
     </script>
-</body>
+  </body>
 </html>
